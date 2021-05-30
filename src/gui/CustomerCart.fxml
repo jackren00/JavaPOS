@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CustomerCartController">
+   <children>
+      <AnchorPane prefHeight="99.0" prefWidth="900.0" style="-fx-background-color: #232323;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/Dixie_Logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="cart" layoutX="671.0" layoutY="30.0" mnemonicParsing="false" onAction="#goToCart" prefHeight="38.0" prefWidth="94.0" styleClass="buttons" stylesheets="@../styles/app.css" text="CART" textFill="#f8f3f3">
+               <font>
+                  <Font name="SansSerif Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="signOut" layoutX="789.0" layoutY="30.0" mnemonicParsing="false" onAction="#performSignOut" prefHeight="38.0" prefWidth="94.0" styleClass="buttons" stylesheets="@../styles/app.css" text="SIGN OUT" textFill="#f8f3f3">
+               <font>
+                  <Font name="SansSerif Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="115.0" prefHeight="358.0" prefWidth="545.0" style="-fx-background-color: #232323;">
+         <children>
+            <TableView fx:id="orderedItems" prefHeight="358.0" prefWidth="545.0">
+              <columns>
+                  <TableColumn fx:id="productButton" maxWidth="40.0" minWidth="32.0" prefWidth="32.0" />
+                <TableColumn fx:id="productName" minWidth="152.0" prefWidth="254.0" text="Product" />
+                <TableColumn fx:id="productPrice" minWidth="0.0" prefWidth="96.0" resizable="false" text="Price" />
+                  <TableColumn fx:id="productMods" maxWidth="237.0" minWidth="150.0" prefWidth="162.0" text="Modifications" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="501.0" prefHeight="99.0" prefWidth="900.0" style="-fx-background-color: #232323;">
+         <children>
+            <Button fx:id="mainMenu" layoutX="667.0" layoutY="36.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="38.0" prefWidth="94.0" styleClass="buttons" stylesheets="@../styles/app.css" text="MAIN MENU" textFill="#f8f3f3">
+               <font>
+                  <Font name="SansSerif Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="787.0" layoutY="36.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="94.0" styleClass="buttons" stylesheets="@../styles/app.css" text="BACK" textFill="#f8f3f3">
+               <font>
+                  <Font name="SansSerif Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="602.0" layoutY="115.0" prefHeight="358.0" prefWidth="282.0" style="-fx-background-color: #232323;">
+         <children>
+            <Label fx:id="discount" layoutX="158.0" layoutY="88.0" prefHeight="28.0" prefWidth="116.0" text="DiscPrice" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="payNow" layoutX="180.0" layoutY="236.0" mnemonicParsing="false" onAction="#performPayNow" prefHeight="99.0" prefWidth="94.0" styleClass="buttons" stylesheets="@../styles/app.css" text="Place Order" textFill="#f8f3f3">
+               <font>
+                  <Font name="SansSerif Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="25.0" layoutY="77.0" prefHeight="50.0" prefWidth="116.0" text="Discounts:" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="27.0" prefHeight="50.0" prefWidth="101.0" text="Subtotal: " textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="127.0" prefHeight="50.0" prefWidth="116.0" text="Tax: " textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="177.0" prefHeight="50.0" prefWidth="116.0" text="Total: " textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="subtotal" layoutX="158.0" layoutY="38.0" prefHeight="28.0" prefWidth="116.0" text="SubPrice" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="taxes" layoutX="158.0" layoutY="138.0" prefHeight="28.0" prefWidth="116.0" text="TaxPrice " textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="total" layoutX="158.0" layoutY="188.0" prefHeight="28.0" prefWidth="116.0" text="TotalPrice" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="favoriteCheck" layoutX="14.0" layoutY="238.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="160.0" text="Favorite" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="24.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

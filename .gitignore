@@ -1,0 +1,8 @@
+# ensure login info doesn't accidentally get pushed
+src/gui/DatabaseSetup.java
+
+# different based on your IDE/OS
+./idea
+.DS_Store
+
+out/

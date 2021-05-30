@@ -1,0 +1,73 @@
+.background_image {
+    -fx-background-image: url('../imgs/Dixie_Login_Background.jpg');
+    -fx-background-size: 100%, 100%;
+}
+
+.login_panel {
+    -fx-background-color: black;
+    -fx-opacity: 85%;
+}
+
+.dixie_logo {
+    -fx-image: url('../imgs/Dixie_Logo.png');
+}
+
+.buttons {
+    -fx-background-radius: 0;
+    -fx-background-color:  #732F2F;
+}
+
+.buttons:hover {
+    -fx-background-color:  #ab4646;
+}
+
+.appetizers {
+    -fx-background-image: url('../imgs/buttons/button_appetizers.jpg');
+}
+
+.beverages {
+    -fx-background-image: url('../imgs/buttons/button_beverage.jpg');
+}
+
+.sides {
+    -fx-background-image: url('../imgs/buttons/button_side.jpg');
+}
+
+.desserts {
+    -fx-background-image: url('../imgs/buttons/button_dessert.jpg');
+}
+
+.entrees {
+    -fx-background-image: url('../imgs/buttons/button_burgers.jpg');
+}
+
+.extras {
+    -fx-background-image: url('../imgs/buttons/button_sauce.jpg');
+}
+
+.specials {
+    -fx-background-image: url('../imgs/buttons/button_specials.jpg');
+}
+
+.recommended {
+    -fx-background-image: url('../imgs/buttons/button_recommended.jpg');
+}
+
+.favorites {
+    -fx-background-image: url('../imgs/buttons/button_favorites.jpg');
+}
+
+.trends {
+    -fx-background-image: url('../imgs/buttons/button_trending.jpg');
+}
+
+.orderqueue {
+    -fx-background-image: url('../imgs/buttons/button_orderqueue.jpg');
+}
+
+.menu_button {
+    -fx-padding: 0 5 2 5;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: rgba(0,0,0,0.0);
+}

@@ -1,0 +1,12 @@
+fries.jpg : https://unsplash.com/photos/LEjEst7lLfU
+burger.jpg : https://unsplash.com/photos/E94j3rMcxlw
+burger1.jpg : https://unsplash.com/photos/uVPV_nV17Tw
+burger2.jpg : https://unsplash.com/photos/Fn6dPYtPUMc
+burger3.jpg : https://unsplash.com/photos/j1NmLRIlJGI
+burger4.jpg : https://unsplash.com/photos/TQTPyxwZuYA
+burger5.jpg : https://unsplash.com/photos/Nb_Q-M3Cdzg
+burger6.jpg : https://unsplash.com/photos/NmOBfNhSuP8
+chicken_sandwich.jpg : https://unsplash.com/photos/z4xYT5fz8Hg
+chicken_plate.jpg : https://unsplash.com/photos/RyjkkK0s6oQ
+sauce.jpg : https://unsplash.com/photos/FzB_512zvP0
+sandwich : https://unsplash.com/photos/UyJee3dGNn0

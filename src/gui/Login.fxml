@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="background_image" stylesheets="@../styles/app.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="280.0" styleClass="login_panel" stylesheets="@../styles/app.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="186.0" layoutX="50.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.98863220214844">
+                     <image>
+                        <Image url="@../imgs/Dixie_Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="26.0" layoutY="104.0" prefHeight="31.0" prefWidth="89.0" text="Email Address" textFill="WHITE" AnchorPane.bottomAnchor="178.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="165.0" AnchorPane.topAnchor="104.0">
+                     <font>
+                        <Font name="SansSerif Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <TextField id="LoginEmailText" fx:id="emailAddress" layoutX="26.0" layoutY="129.0" prefHeight="25.0" prefWidth="228.0" style="-fx-background-color: white;" styleClass="buttons" stylesheets="@../styles/app.css" AnchorPane.bottomAnchor="159.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="129.0" />
+                  <Label layoutX="26.0" layoutY="157.0" prefHeight="41.0" prefWidth="103.0" text="Password" textFill="WHITE" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="165.0" AnchorPane.topAnchor="157.0">
+                     <font>
+                        <Font name="SansSerif Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <TextField id="LoginPasswordText" fx:id="password" layoutX="26.0" layoutY="182.0" prefHeight="25.0" prefWidth="228.0" style="-fx-background-color: white;" styleClass="buttons" stylesheets="@../styles/app.css" AnchorPane.bottomAnchor="106.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="182.0" />
+                  <Button id="LoginLoginButton" fx:id="login" layoutX="95.0" layoutY="226.0" mnemonicParsing="false" onAction="#checkLogin" prefHeight="31.0" prefWidth="89.0" styleClass="buttons" stylesheets="@../styles/app.css" text="LOGIN" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="226.0">
+                     <font>
+                        <Font name="SansSerif Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button id="LoginSignUpButton" fx:id="signUp" layoutX="177.0" layoutY="268.0" mnemonicParsing="false" onAction="#gotoSignup" prefHeight="31.0" prefWidth="67.0" styleClass="buttons" stylesheets="@../styles/app.css" text="SIGN UP" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="177.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="268.0">
+                     <font>
+                        <Font name="SansSerif Bold" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
